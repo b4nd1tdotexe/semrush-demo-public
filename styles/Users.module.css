@@ -1,0 +1,29 @@
+.pulsingHeart::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  display: inline-block;
+  width: 32px;
+  height: 30px;
+  background: url('/accent-heart.svg') no-repeat;
+  background-size: contain;
+}
+
+.pulsingHeart {
+  position: relative;
+  padding-left: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .pulsingHeart::before {
+    top: 4px;
+    left: 6px;
+    width: 58px;
+    height: 55px;
+  }
+
+  .pulsingHeart {
+    padding-left: 78px;
+  }
+}

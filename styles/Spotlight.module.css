@@ -1,0 +1,50 @@
+.gradient {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 1290.52px;
+  height: 820.02px;
+  background-image: radial-gradient(66.98% 92.33% at 33.97% 66.69%, #6e00ff 23.04%, #ff54f5 61.11%, #fff031 88.22%);
+  transform: rotate(-172deg) translate(-15%, -14%);
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/spotlight_left.png');
+  background-position: calc(50% + 85px) -24px;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+  .gradient,
+  .img {
+    display: none;
+  }
+
+  .container {
+    background-image: url(/spotlight_left.png), url(/spotlight_bottom.png);
+    background-position: left top, left bottom;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    background-image: url(/spotlight_left.png), url(/spotlight_right.png);
+    background-position: 5px -39px, 80px top;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    background-position: left top, right top;
+  }
+}

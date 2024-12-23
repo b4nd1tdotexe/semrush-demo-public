@@ -1,0 +1,45 @@
+.hatImgContainer {
+  position: relative;
+  top: 0;
+  right: 10px;
+  width: 270px;
+  height: 347px;
+}
+
+.listItm::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 18px;
+  height: 14px;
+  background: url('/check.svg') no-repeat;
+  background-size: contain;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .hatImgContainer {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 340px;
+    height: 437px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hatImgContainer {
+    width: 493px;
+    height: 633px;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hatImgContainer {
+    width: 548px;
+    height: 703px;
+    margin-left: -50px;
+    flex-shrink: 0;
+  }
+}
